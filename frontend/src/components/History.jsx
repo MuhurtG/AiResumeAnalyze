@@ -25,7 +25,7 @@ export default function History({ onSelect }) {
 
   const fetchHistory = async () => {
     try {
-      const { data } = await axios.get('http://127.0.0.1:5000/history')
+      const { data } = await axios.get('https://resume-ai-backend-hm8v.onrender.com/history')
       setRecords(data)
     } catch (err) {
       console.error('Failed to load history')

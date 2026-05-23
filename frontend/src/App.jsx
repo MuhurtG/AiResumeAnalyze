@@ -26,7 +26,7 @@ export default function App() {
 
     try {
       const { data } = await axios.post(
-        'http://127.0.0.1:5000/analyze',
+        'https://resume-ai-backend-hm8v.onrender.com/analyze',
         formData,
         { headers: { 'Content-Type': 'multipart/form-data' } }
       )
